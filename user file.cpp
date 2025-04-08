@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-string name;
+    for(int i=1;i<=3;i++)
+    {
+      string name;
 int age;
 ofstream file;
 file.open("sample.txt",ios::out|ios::app);
@@ -17,6 +19,9 @@ cin>>age;
 file<<"Age is : "<<age;
 cin.ignore();
 file.close();
+    }
+
+
 
 
 return 0;
